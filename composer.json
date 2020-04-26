@@ -1,0 +1,37 @@
+{
+    "name": "yosmy/phone-twilio-carrier-lookup",
+    "description": "",
+    "require": {
+        "php": ">=7.2",
+        "yosmy/http": "@dev",
+        "yosmy/error": "@dev",
+        "yosmy/phone-carrier-lookup": "@dev",
+        "yosmy/phone-carrier-lookup-cache": "@dev"
+    },
+    "require-dev": {
+        "symfony/debug": "~4",
+        "phpunit/phpunit": "^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yosmy\\Phone\\Carrier\\": [
+                "src"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yosmy\\Phone\\Carrier\\Test\\": [
+                "tests/user"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.yosmy.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
